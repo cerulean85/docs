@@ -255,6 +255,27 @@ export const navigation: Array<NavGroup> = [
       { title: 'Attachments', href: '/attachments' },
     ],
   },
+  {
+    title: 'Memo.',
+    links: [
+      { title: '허무주의에 대한 오해', href: '/nihilism' },
+      { title: '요리 본능을 읽고', href: '/cook-instinct' },
+      { title: '데미안: 아프락사스', href: '/abraxas' },
+      { title: '소유냐 존재냐를 읽고', href: '/to-have-to-be' },
+      { title: '국가는 왜 실패하는가', href: '/country-fail' },
+      { title: '삼체를 읽고', href: '/three-body' },
+    ],
+  },
+  {
+    title: 'Essay.',
+    links: [
+      { title: '독서의 이유', href: '/why-reason' },
+      { title: '비틀즈의 고독', href: '/lonely-beatles' },
+      { title: '아이디어에 대해', href: '/what-idea' },
+      { title: '이해와 창조에 대해', href: '/understand-create' },
+      { title: '성취와 노력에 대해', href: '/achieve-effort' },
+    ],
+  },
 ]
 
 export function Navigation(props: React.ComponentPropsWithoutRef<'nav'>) {
