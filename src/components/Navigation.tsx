@@ -6,7 +6,6 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useRef } from 'react'
 
-import { Button } from '@/components/Button'
 import { useIsInsideMobileNavigation } from '@/components/MobileNavigation'
 import { useSectionStore } from '@/components/SectionProvider'
 import { Tag } from '@/components/Tag'
@@ -256,6 +255,24 @@ export const navigation: Array<NavGroup> = [
     ],
   },
   {
+    title: 'Computing.',
+    links: [
+      {
+        title: '병행성 vs. 병렬성',
+        href: '/parallelism',
+      },
+    ],
+  },
+  {
+    title: 'Computer History.',
+    links: [
+      { title: '비지캘크(VisiCalc)', href: '/visicalc' },
+      { title: '애플I', href: '/apple-apple1' },
+      { title: '애플II', href: '/apple-apple2' },
+      { title: 'Windows 95', href: '/windows95' },
+    ],
+  },
+  {
     title: 'Memo.',
     links: [
       { title: '허무주의에 대한 오해', href: '/nihilism' },
@@ -293,9 +310,9 @@ export function Navigation(props: React.ComponentPropsWithoutRef<'nav'>) {
           />
         ))}
         <li className="sticky bottom-0 z-10 mt-6 min-[416px]:hidden">
-          <Button href="#" variant="filled" className="w-full">
+          {/* <Button href="#" variant="filled" className="w-full">
             Sign in
-          </Button>
+          </Button> */}
         </li>
       </ul>
     </nav>
