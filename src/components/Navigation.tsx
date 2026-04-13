@@ -255,6 +255,15 @@ export const navigation: Array<NavGroup> = [
     ],
   },
   {
+    title: 'AI.',
+    links: [
+      {
+        title: '[요약] 멀티 에이전트 오케스트레이션은 왜 잘 안 되는가?',
+        href: '/why-miti-agent-fail',
+      },
+    ],
+  },
+  {
     title: 'Computing.',
     links: [
       {
